@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamad's Portfilio</title>
+    <link rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="images/logo1.jpg" class="logo">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+           </nav> 
+           <div class="header-text">
+            <h1>Hello,I am Mohamad Jawad Hachem</h1>
+            <p>Full stack developper</p>
+           </div>
+
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About me.jpg" >
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-titles">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto aliquid modi dignissimos, necessitatibus, ut nulla dolorem cupiditate dolore laboriosam quae. Ut, quibusdam incidunt ullam voluptatibus sit beatae quaerat porro qui quam suscipit cum temporibus quas eum. Adipisci, vero atque nam distinctio omnis hic sapiente nihil modi neque, explicabo illum?</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                            <p class="tab-links" onclick="opentab('Education')">Education </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills"> <ul>
+                            <li> <span>front-end</span><br>Expert in React.js</li>
+                            <li> <span>back-end</span><br>Expert in Node.js</li>
+                            <li> <span>OOP</span><br>Expert in python</li>
+                            </ul>
+                        </div>
+                            <div class="tab-contents" id="Experience">
+                               <ul><li><span>2023-Current</span><br>Internship at Bytetactix </li></ul> 
+                                
+                            </div>
+                            <div class="tab-contents" id="Education"><ul>
+                                <li><span>2007-2019</span><br>School at sagesse brasilia</li>
+                                <li><span>2019-2022</span><br>High school at al mahdi schools</li>
+                                <li><span>2022-current</span><br>Computer sience bachelor at USJ</li>
+                            </ul></div>
+                                
+                            </div>    
+                            
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-titles">My services</h1>
+            <div class="services-list">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
 </body>
 </html>
