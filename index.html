@@ -7,6 +7,7 @@
     <link class="icon" rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/784871ec82.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id="header">
@@ -47,7 +48,7 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills"> <ul>
                             <li> <span>front-end</span><br>Expert in React.js</li>
-                            <li> <span>back-end</span><br>Expert in Node.js</li>
+                            <li> <span>back-end</span><br>Beginner in .NEt</li>
                             <li> <span>OOP</span><br>Expert in python</li>
                             </ul>
                         </div>
@@ -75,13 +76,13 @@
                 <div>
                      <h2>Web Design</h2>
                      <i class="fa-solid fa-code"></i>
-                     <p>Bulding full stack web apps using react and node.js.</p>
+                     <p>Bulding full stack web apps using react and .NET</p>
                      <a href="#contact">learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile"></i>
-                    <h2>mobile design</h2>
-                    <p>Bulding Mobile apps using React native</p>
+                    <h2>C# programs</h2>
+                    <p>Bulding C# programs</p>
                     <a href="#contact">learn more</a>
                 </div>
                 <div>
@@ -117,7 +118,7 @@
                 <div class="work">
                     <img src="images/work-3.png" >
                     <div class="layer">
-                        <h3>Mobile Apps</h3>
+                        <h3>C# programs</h3>
                         
                         <a href="#"><i class="fa-solid fa-link"></i></a>  
                     </div>
@@ -144,7 +145,7 @@
                 <div class="contact-right">
                     <form  name='submit-to-google-sheet'>
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email"required>
+                        <input type="email" name="email" id="email" placeholder="Your Email"required>
                         <textarea name="Message" id="Message" cols="7" rows="10">Your Message</textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
@@ -180,7 +181,7 @@
         
         }
     </script>
-    <script>
+      <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxpjhKjVMis6_iTog_xUF3LJ05bo-sIErJrWpZdyM-1gsUyzosezJF5YTSD12ofe4c/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
@@ -198,5 +199,7 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+      
 </body>
 </html>
